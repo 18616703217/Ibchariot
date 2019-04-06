@@ -1,4 +1,10 @@
-﻿def judgenames():
+﻿"""
+create_name:xiaoma
+create_time:2019/04/06
+discription::python变量名合法化
+"""
+
+def judgenames():
     py_word = input("请输入python变量名")
     strpun = ""
     if py_word[0].isalpha() or py_word[0] == "_":
@@ -8,16 +14,16 @@
             if i.isalnum() or i == "_":
                 strpun += "1"           
             else:
-                strpun += "2"
-                break
+                strpun += "2"               
 
         if "1" in strpun:
-            print("您输入的变量名合法")
+            return "您输入的变量名合法"
         elif "2" in strpun:
-            print("您输入的变量名中间内容不合法")
+            return "您输入的变量名中间内容不合法"
    
     else:
-        print("您输入的开头不满足要求，变量名不合法")
+        return "您输入的开头不满足要求，变量名不合法"
 
 if __name__ == "__main__":
-    judgenames()
+    result = judgenames()
+    print(result)
