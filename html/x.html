@@ -2,13 +2,13 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
 <html>
 <head>
-	<title>åˆ¤æ–­ä¸‰è§’å½¢ç±»å‹</title>
+	<title>ÅĞ¶ÏÈı½ÇĞÎÀàĞÍ</title>
 </head>
 <body>
 	<input type="text" name="name" id="t1">
 	<input type="text" name="name" id="t2">
 	<input type="text" name="name" id="t3">
-	<button onclick="test()">æäº¤</button>
+	<button onclick="test()">Ìá½»</button>
 </body>
 
 <script type="text/javascript">
@@ -20,7 +20,7 @@
 	}
 	function assert(x,y,z){
 		if(x.length == 0 || y.length == 0 || z.length == 0){
-			alert("ä¼ å…¥ä¸‰è§’å½¢ä¸‰æ¡è¾¹å†…å®¹æœ‰ç©º")
+			alert("´«ÈëÈı½ÇĞÎÈıÌõ±ßÄÚÈİÓĞ¿Õ")
 			return
 		}
 
@@ -29,30 +29,30 @@
 		z=Number(z)
 
 		if(!isNumber(x) || !isNumber(y) || !isNumber(z)){
-			alert("ä¼ å…¥ä¸‰æ¡è¾¹ä¸ºéæ•°å­—")
+			alert("´«ÈëÈıÌõ±ßÎª·ÇÊı×Ö")
 			return
 		}
 		if(x+y<=z || x+z<=y || y+z<=x){
-			alert("ä¸‰æ¡è¾¹æ— æ³•ç»„æˆä¸€ä¸ªä¸‰è§’å½¢")
+			alert("ÈıÌõ±ßÎŞ·¨×é³ÉÒ»¸öÈı½ÇĞÎ")
 			return
 		}
 		if(x==y && y==z){
-			alert("ç­‰è¾¹ä¸‰è§’å½¢")
+			alert("µÈ±ßÈı½ÇĞÎ")
 			return
 		}
 		if(x==y || y==z || x==z){
-			alert("ç­‰è…°ä¸‰è§’å½¢")
+			alert("µÈÑüÈı½ÇĞÎ")
 			return
 		}else{
-			alert("ä¸è§„åˆ™ä¸‰è§’å½¢")
+			alert("²»¹æÔòÈı½ÇĞÎ")
 			return
 		}
 		
 	}
 
 	function isNumber(val) {
-    var regPos = /^\d+(\.\d+)?$/; //éè´Ÿæµ®ç‚¹æ•°
-    var regNeg = /^(-(([0-9]+\.[0-9]*[1-9][0-9]*)|([0-9]*[1-9][0-9]*\.[0-9]+)|([0-9]*[1-9][0-9]*)))$/; //è´Ÿæµ®ç‚¹æ•°
+    var regPos = /^\d+(\.\d+)?$/; //·Ç¸º¸¡µãÊı
+    var regNeg = /^(-(([0-9]+\.[0-9]*[1-9][0-9]*)|([0-9]*[1-9][0-9]*\.[0-9]+)|([0-9]*[1-9][0-9]*)))$/; //¸º¸¡µãÊı
     if(regPos.test(val) || regNeg.test(val)) {
         return true;
         } else {
@@ -60,4 +60,3 @@
         }
     }
 </script>
-</html>
