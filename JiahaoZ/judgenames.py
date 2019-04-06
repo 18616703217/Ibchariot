@@ -11,5 +11,5 @@ def func(a):
 if __name__=="__main__":
     import string
     b=string.ascii_letters
-    a=str(input("请输入变量名: "))
+    c=str(input("请输入变量名: "))
     func(c)
