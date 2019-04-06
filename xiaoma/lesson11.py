@@ -8,11 +8,12 @@
             if i.isalnum() or i == "_":
                 strpun += "1"           
             else:
+                strpun += "2"
                 break
 
         if "1" in strpun:
             print("您输入的变量名合法")
-        else:
+        elif "2" in strpun:
             print("您输入的变量名中间内容不合法")
    
     else:
