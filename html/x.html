@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+<html>
+<head>
+	<title>判断三角形类型</title>
+</head>
+<body>
+	<input type="text" name="name" id="t1">
+	<input type="text" name="name" id="t2">
+	<input type="text" name="name" id="t3">
+	<button onclick="test()">提交</button>
+</body>
+
+<script type="text/javascript">
+	function test(){
+		var x = document.getElementById("t1").value
+		var y = document.getElementById("t2").value
+		var z = document.getElementById("t3").value
+		assert(x,y,z)
+	}
+	function assert(x,y,z){
+		if(x.length == 0 || y.length == 0 || z.length == 0){
+			alert("传入三角形三条边内容有空")
+			return
+		}
+
+		x=Number(x)
+		y=Number(y)
+		z=Number(z)
+
+		if(!isNumber(x) || !isNumber(y) || !isNumber(z)){
+			alert("传入三条边为非数字")
+			return
+		}
+		if(x+y<=z || x+z<=y || y+z<=x){
+			alert("三条边无法组成一个三角形")
+			return
+		}
+		if(x==y && y==z){
+			alert("等边三角形")
+			return
+		}
+		if(x==y || y==z || x==z){
+			alert("等腰三角形")
+			return
+		}else{
+			alert("不规则三角形")
+			return
+		}
+		
+	}
+
+	function isNumber(val) {
+    var regPos = /^\d+(\.\d+)?$/; //非负浮点数
+    var regNeg = /^(-(([0-9]+\.[0-9]*[1-9][0-9]*)|([0-9]*[1-9][0-9]*\.[0-9]+)|([0-9]*[1-9][0-9]*)))$/; //负浮点数
+    if(regPos.test(val) || regNeg.test(val)) {
+        return true;
+        } else {
+        return false;
+        }
+    }
+</script>
+</html>
