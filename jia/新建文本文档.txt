@@ -1,0 +1,5 @@
+Git status  查看当前状态
+Git add .   添加所有
+Git  commit  -m “内容注释”    提交的东西
+Git  push    推到服务器
+Git  pull   下载新的内容

@@ -1,4 +1,10 @@
 ﻿#encoding utf-8
+"""
+create_name:haojiaz
+create_time:2019/04/06
+func_dexcription:python变量名合法校验
+"""
+
 def func(variable_value):
     if variable_value[0] not in start_rule:
         return "变量名不符合开头只能用字母下划线要求"
