@@ -1,5 +1,5 @@
 ﻿#encoding utf-8
-def func():
+def func(a):
     while 1:
         if a[0] in b or a[0] == "_":
             print("您输入的变量名合法")
@@ -12,4 +12,4 @@ if __name__=="__main__":
     import string
     b=string.ascii_letters
     a=str(input("请输入变量名: "))
-    func()
+    func(c)
